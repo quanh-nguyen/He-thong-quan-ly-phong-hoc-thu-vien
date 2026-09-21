@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống phòng học</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/">Trang chủ</a>
+            <a href="/dashboard">Dashboard</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Hệ thống quản lý phòng học thư viện</h1>
+            <p>Quản lý lịch đ��t phòng, trạng thái phòng và hiệu suất sử dụng</p>
+            <a href="/dashboard"><button>Đi tới Dashboard</button></a>
+        </section>
+
+        <div class="card-grid">
+            <div class="card">
+                <h3>Phòng trống</h3>
+                <p>12 phòng</p>
+            </div>
+            <div class="card">
+                <h3>Đang được đặt</h3>
+                <p>5 phòng</p>
+            </div>
+            <div class="card">
+                <h3>Đang bảo trì</h3>
+                <p>2 phòng</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
